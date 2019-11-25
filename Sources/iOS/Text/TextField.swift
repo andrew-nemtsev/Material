@@ -606,7 +606,7 @@ fileprivate extension TextField {
     
     guard isEditing || !isEmpty || !isPlaceholderAnimated else {
       placeholderLabel.transform = CGAffineTransform.identity
-      placeholderLabel.frame.origin = CGPoint(x: leftPadding, y: textInsets.top)
+      placeholderLabel.frame.origin = CGPoint(x: leftPadding, y: textInsets.top + placeholderVerticalOffset)
       return
     }
     
